@@ -14,9 +14,9 @@
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-
+      
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
 
       <!-- NAV-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -34,10 +34,10 @@
                   <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#work">Work</a>
+                  <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                  <a class="nav-link active" aria-current="page" href="#work">Work</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#about">About</a>
@@ -56,15 +56,98 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8">
-                <h1 class="display-4 fw-bold">I'm a <span class="text-brand">Developer</span> from Toronto</h1>
-                <p class="lead mt-2 mb-4">I am Aron Wiz, and i do X,Y,Z </p>
-                <a href="#work" class="btn btn-brand me-3">Explore my work</a>
-                <a href="#" class="link-custom">Call: 416-123-1234</a>
+                <h1 class="display-4 fw-bold" data-aos="fade-up">I'm a <span class="text-brand">Developer</span> from Toronto</h1>
+                <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Aron Wiz, and i do X,Y,Z </p>
+                <div data-aos="fade-up" data-aos-delay="700">
+                  <a href="#work" class="btn btn-brand me-3">Explore my work</a>
+                  <a href="#" class="link-custom">Call: 416-123-1234</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- //HOME -->
+
+        <!-- Projects -->
+        <section id = "projects" class="full-height px-lg-5">
+          <div class="container">
+            <div class="row pb-4" data-aos="fade-up">
+              <div class="col-lg-8">
+                <h6 class="text-brand">PROJECTS</h6>
+                <h1>Projects that've sparked my curiosity</h1>
+              </div>
+            </div>
+
+            <div class="row gy-4">
+
+              <div class="col-md-4" data-aos="fade-right">
+                <div class="projects p-4 bg-base rounded-5 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <i class="las la-laptop-code"></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Project 1 ??</h5>
+                  <p>This will be a short explanation of the first project i've completed</p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="500">
+                <div class="projects p-4 bg-base rounded-5 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <i class="las la-terminal"></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Project 2 ??</h5>
+                  <p>This will be a short explanation of the first project i've completed</p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="900">
+                <div class="projects p-4 bg-base rounded-5 shadow-effect">
+                  <div class="iconbox rounded-3">
+                    <i class="las la-file-code"></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Project 3 ??</h5>
+                  <p>This will be a short explanation of the first project i've completed</p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //Projects -->
+
+        <!-- WORK -->
+        <section id="work" class="full-height px-lg-5">
+          <div class="container">
+
+            <div class="row pb-4" data-aos="fade-up">
+              <div class="col-lg-8">
+                <h6 class="text-brand">WORK</h6>
+                <h1>My Work Experiences</h1>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                  <div class="card-custom-image rounded-4">
+                    <img class="rounded-5" src="/images/bb6.jpeg" alt="">
+                  </div>
+                  <div class="card-custom-content p-4">
+                    <h4>Work Experience 1</h4>
+                    <p>This will be an explanation of my first the work experience above</p>
+                    <a href="#" class="link-custom">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </section>
+        <!-- ///Work -->
+
       </div>
       <!-- //CONTENT -->
 
