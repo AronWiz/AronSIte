@@ -10,7 +10,7 @@
         <title>Aron Site</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
@@ -81,33 +81,48 @@
 
             <div class="row gy-4">
 
-              <div class="col-md-4" data-aos="fade-right">
+              <div class="col-md-6" data-aos="fade-right">
                 <div class="projects p-4 bg-base rounded-5 shadow-effect">
                   <div class="iconbox rounded-3">
                     <i class="las la-laptop-code"></i>
                   </div>
                   <h4 class="mt-4 mb-2">Software Developer / Business analyst</h4>
                   <h6 class="mt-3 mb-4">Ministry Of Ontario</h6>
-                  <p>Initiated and conducted in-depth interviews with key stakeholders from both development and business intelligence teams to gain a comprehensive understanding of each department’s specific needs and challenges. </p>
-                  <p>Collaborated closely with developers, data analysts, and project managers to identify technical requirements and potential areas for process improvement. Actively served as a liaison between core technical teams and business units across multiple ministries, translating complex technical concepts into actionable business insights.</p>
-                  <p>Developed and customized the internal CRM(Microsoft 365 Dynamics using C#/Javascript and .net) for the various government stakeholders by mapping out workflows and customizing different applications based on different users requirements, such as the UI and logic between pages and data validation/retrieval throughout their workflow process</p>
-                  <p>Developed scripts using C# to run a scheduler which would efficiently retrieve documentation, parse and format data from SharePoint and automatically update the CRM daily</p>
-                  <p>Created user manuals for a full walkthrough of the multiple custom applications created throughout the year</p>
-                  <a href="#" class="link-custom">Read More</a>
+                  <a href="#multiCollapseExample1" class="link-custom" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Read More</a>
+                  <div class="collapse multi-collapse " id="multiCollapseExample1">
+                    <div class="card card-body p-4 bg-base rounded-5">
+                      <p>- Conducted in-depth interviews with stakeholders from development and business intelligence teams to understand departmental needs and challenges</p>
+                      <p>- Collaborated with developers, data analysts, and project managers to identify technical requirements, process improvements, and translate technical concepts into actionable business insights for multiple ministries</p>
+                      <p>- Customized Microsoft Dynamics 365 CRM using C#, JavaScript, and .NET to tailor workflows, UI, and data validation for various government stakeholders</p>
+                      <p>- Automated data retrieval and updates from SharePoint to CRM with C# scripts, improving efficiency</p>
+                      <p>- Created user manuals for custom applications to support end-users</p>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
 
-              <div class="col-md-4" data-aos="fade-right" data-aos-delay="500">
+              <div class="col-md-6" data-aos="fade-right" data-aos-delay="700">
                 <div class="projects p-4 bg-base rounded-5 shadow-effect">
                   <div class="iconbox rounded-3">
                     <i class="las la-terminal"></i>
                   </div>
-                  <h5 class="mt-4 mb-2">Work 2 ??</h5>
-                  <p>This will be a short explanation of the first Work i've completed</p>
-                  <a href="#" class="link-custom">Read More</a>
+                  <h4 class="mt-4 mb-2">Backend Developer</h4>
+                  <h6 class="mt-3 mb-4">University of Toronto Live Competition Team</h6>
+                  <a href="#multiCollapseExample2" class="link-custom" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Read More</a>
+                  <div class="collapse multi-collapse " id="multiCollapseExample2">
+                    <div class="card card-body p-4 bg-base rounded-5">
+                      <p>- Improved the digital experience of a student competition platform using both RESTful APIs and Django Framework; managed candidate rooms, integrated different communications methods, and facilitated live announcements  for UofT’s National business competition</p>
+                      <p>- Developed a blueprint digital competition model for other Post-Secondary Institutions to seamlessly replicate and customize</p>
+                      <p>- Led overall project management using Agile principles; worked with Jira and Confluence to design and document user stories, assign user story points, prioritize, and assign teammates to the appropriate tasks</p>
+
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
 
+              <!-- 
               <div class="col-md-4" data-aos="fade-right" data-aos-delay="900">
                 <div class="projects p-4 bg-base rounded-5 shadow-effect">
                   <div class="iconbox rounded-3">
@@ -118,6 +133,9 @@
                   <a href="#" class="link-custom">Read More</a>
                 </div>
               </div>
+              -->
+
+             
             </div>
           </div>
         </section>
@@ -160,13 +178,14 @@
                     <img class="rounded-5" src="images/bb6.jpeg" alt="">
                   </div>
                   <div class="card-custom-content p-4">
-                    <h4>Project Experience 1</h4>
-                    <p>This will be an explanation of my first the work experience above</p>
+                    <h4>QR Code Creator</h4>
+                    <p>Create QR codes and cutsomize data/info to be shown</p>
                     <a href="#" class="link-custom">Read More</a>
                   </div>
                 </div>
               </div>
 
+              <!--
               <div class="col-md-6" data-aos="fade-up" >
                 <div class="card-custom rounded-4 bg-base shadow-effect">
                   <div class="card-custom-image rounded-4">
@@ -193,6 +212,7 @@
                 </div>
               </div>
             </div>
+             -->
             
 
           </div>
@@ -250,8 +270,7 @@
 
       </div>
       <!-- //CONTENT -->
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="main.js"></script>
 
